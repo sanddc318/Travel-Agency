@@ -1,5 +1,5 @@
 .large-hero {
-  border-bottom: 0.4rem solid $mainBlue;
+  border-bottom: 0.8rem solid $mainBlue;
   position: relative;
 
   &__image {
@@ -37,7 +37,7 @@
     }
   }
 
-  &__hero-description {
+  &__description {
     color: #fff;
     font-size: 1.1rem;
     font-weight: 100;
@@ -45,9 +45,9 @@
     margin-right: auto;
     max-width: 30rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-  }
 
-  @mixin atSmall {
-    font-size: 1.88rem;
+    @mixin atSmall {
+      font-size: 1.88rem;
+    }
   }
 }

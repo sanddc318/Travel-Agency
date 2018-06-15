@@ -352,15 +352,31 @@ img {
 }
 
 .wrapper {
-  padding: 0 1.2rem;
+  padding: 0 18px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
 }
 
+.wrapper--medium {
+    max-width: 976px;
+  }
+
+.wrapper .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 .page-section {
-  padding: 4.5rem 0;
+  padding: 1.2rem 0;
 }
+
+@media (min-width: 800px) {
+
+.page-section {
+    padding: 4.5rem 0
+}
+  }
 
 .page-section__blue {
     background-color: #2f5572;
@@ -390,8 +406,58 @@ img {
   }
   }
 
+.headline {
+  color: #2f5572;
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+
+@media (min-width: 530px) {
+
+.headline {
+    font-size: 2.88rem
+}
+  }
+
+.headline--center {
+    text-align: center;
+  }
+
+.headline--orange {
+    color: #d59541;
+  }
+
+.headline--small {
+    font-size: 1.2rem;
+  }
+
+@media (min-width: 530px) {
+
+.headline--small {
+      font-size: 1.88rem
+  }
+  }
+
+.headline--narrow {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+
+.headline--light {
+    font-weight: 100;
+  }
+
+.headline--b-margin-small {
+    margin-bottom: 0.5em;
+  }
+
+.headline--b-margin-large {
+    margin-bottom: 1.6em;
+  }
+
 .large-hero {
-  border-bottom: 0.4rem solid #2f5572;
+  border-bottom: 0.8rem solid #2f5572;
   position: relative;
 }
 
@@ -437,7 +503,7 @@ img {
   }
   }
 
-.large-hero__hero-description {
+.large-hero__description {
     color: #fff;
     font-size: 1.1rem;
     font-weight: 100;
@@ -449,7 +515,7 @@ img {
 
 @media (min-width: 530px) {
 
-.large-hero {
-    font-size: 1.88rem
-}
+.large-hero__description {
+      font-size: 1.88rem
+  }
   }

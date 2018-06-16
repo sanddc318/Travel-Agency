@@ -398,6 +398,10 @@ a {
     margin-right: -65px;
   }
 
+.row--gutters-small {
+    margin-right: -45px;
+  }
+
 .row--gutters-large {
     margin-right: -100px;
   }
@@ -412,6 +416,10 @@ a {
 
 .row__b-margin-until-medium {
     margin-bottom: 1rem;
+  }
+
+.row--t-padding {
+    padding-top: 80px;
   }
 
 @media (min-width: 800px) {
@@ -441,6 +449,20 @@ a {
     .row__b-margin-until-medium {
       margin-bottom: 0;
     }
+  }
+
+/* Equal height rules */
+
+@media (min-width: 530px) {
+
+.row--equal-height-at-medium {
+      display: flex
+  }
+
+      .row--equal-height-at-medium > section {
+        float: none;
+        display: flex;
+      }
   }
 
 .page-section {

@@ -652,8 +652,14 @@ a {
       display: inline-block;
       margin-bottom: 0;
       margin-left: 0;
-      margin-right: 0.5rem
+      margin-right: 0.5rem;
+      position: relative;
+      top: 0.5rem
   }
+  }
+
+.section-title--blue {
+    color: #2f5572;
   }
 
 .feature-item {

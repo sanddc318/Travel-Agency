@@ -2,16 +2,35 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1236px;
-  padding: 0 18px;
   overflow: hidden;
+
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &--medium {
     max-width: 976px;
   }
 
-  .wrapper {
+  &--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
+
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
   }
 
   &--b-margin {

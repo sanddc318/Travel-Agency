@@ -3,7 +3,7 @@
   margin-bottom: 98px;
   padding: 0 18px 1px 18px; /* 1px p-bottom lets inner p element utilize its m-bottom */
 
-  @mixin atMedium {
+  @mixin atLarge {
     margin-bottom: 0;
     padding: 0 1.81rem 1px 1.81rem;
   }

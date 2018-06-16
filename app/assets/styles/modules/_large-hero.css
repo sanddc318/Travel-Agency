@@ -19,7 +19,7 @@
   &__title {
     color: $mainBlue;
     font-size: 2.4rem;
-    font-weight: 300;
+    font-weight: 100;
     margin: 0;
 
     @mixin atSmall {
@@ -30,7 +30,7 @@
   &__subtitle {
     color: $mainBlue;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 100;
     margin: 0;
 
     @mixin atSmall {

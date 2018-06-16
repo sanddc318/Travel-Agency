@@ -35,7 +35,7 @@
 
   <!-- Hero image, text overlay-->
 
-  <div class="large-hero">
+  <section class="large-hero">
 
     <picture>
       <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
@@ -55,11 +55,11 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- About Us -->
 
-  <div id="our-beginning" class="page-section">
+  <section id="our-beginning" class="page-section">
     <div class="wrapper">
       <h2 class="headline headline--centered headline--light headline--b-margin-small">The first trip we planned
         <strong>was our own.</strong>
@@ -74,14 +74,15 @@
       </div>
 
       <div class="row row--gutters">
-        <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+        <section class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
           <picture>
             <source sizes='404px' media="(min-width: 1020px)" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w">
             <source sizes='382px' media="(min-width: 800px)" srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w">
             <img srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
           </picture>
-        </div>
-        <div class="row__medium-8 row__medium-8--smaller">
+        </section>
+
+        <section class="row__medium-8 row__medium-8--smaller">
           <div class="generic-content-container">
             <h2 class="headline headline--no-t-margin">Here&rsquo;s how we got started&hellip;</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -99,39 +100,55 @@
               <strong>dolore eu fugiat.</strong>
             </p>
           </div>
-        </div>
+        </section>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Features -->
 
-  <div id="features" class="page-section page-section--blue">
+  <section id="features" class="page-section page-section--blue">
     <div class="wrapper">
-      <img src="assets/images/icons/star.svg">
-      <h2>Our Features</h2>
+      <h2 class="section-title">
+        <img src="assets/images/icons/star.svg" class="section-title section-title__icon"> Our
+        <strong>Features</strong>
+      </h2>
 
-      <img src="assets/images/icons/rain.svg">
-      <h3>We&rsquo;ll Watch the Weather</h3>
-      <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current
-        location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
+      <div class="row row--gutters-large">
+        <section class="row__medium-6 generic-content-container">
+          <div class="feature-item">
+            <img src="assets/images/icons/rain.svg" class="feature-item__icon">
+            <h3 class="feature-item__title">We&rsquo;ll Watch the Weather</h3>
+            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around
+              your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
+          </div>
 
-      <img src="assets/images/icons/globe.svg">
-      <h3>Global Guides</h3>
-      <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the
-        world you want to escape to we know the most scenic and inspiring locations.</p>
+          <div class="feature-item">
+            <img src="assets/images/icons/globe.svg" class="feature-item__icon">
+            <h3 class="feature-item__title">Global Guides</h3>
+            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of
+              the world you want to escape to we know the most scenic and inspiring locations.</p>
+          </div>
+        </section>
 
-      <img src="assets/images/icons/wifi.svg">
-      <h3>Wi-Fi Waypoints</h3>
-      <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out
-        where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+        <section class="row__medium-6 generic-content-container">
+          <div class="feature-item">
+            <img src="assets/images/icons/wifi.svg" class="feature-item__icon">
+            <h3 class="feature-item__title">Wi-Fi Waypoints</h3>
+            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped
+              out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+          </div>
 
-      <img src="assets/images/icons/fire.svg">
-      <h3>Survival Kit</h3>
-      <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to
-        setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+          <div class="feature-item">
+            <img src="assets/images/icons/fire.svg" class="feature-item__icon">
+            <h3 class="feature-item__title">Survival Kit</h3>
+            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow
+              you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Testimonials -->
 

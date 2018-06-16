@@ -8,6 +8,7 @@
 
   &__text-content {
     left: 0;
+    padding-top: 3.75rem;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -18,7 +19,7 @@
   &__title {
     color: $mainBlue;
     font-size: 2.4rem;
-    font-weight: 100;
+    font-weight: 300;
     margin: 0;
 
     @mixin atSmall {
@@ -29,7 +30,7 @@
   &__subtitle {
     color: $mainBlue;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 300;
     margin: 0;
 
     @mixin atSmall {

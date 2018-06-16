@@ -364,17 +364,29 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 1236px;
-  padding: 0 18px;
   overflow: hidden;
 }
+
+.wrapper .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 .wrapper--medium {
     max-width: 976px;
   }
 
-.wrapper .wrapper {
+.wrapper--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
+  }
+
+@media (min-width: 800px) {
+
+.wrapper--no-padding-until-medium {
+      padding-left: 18px;
+      padding-right: 18px
+  }
   }
 
 .wrapper--b-margin {
@@ -398,10 +410,6 @@ a {
     margin-right: -65px;
   }
 
-.row--gutters-small {
-    margin-right: -45px;
-  }
-
 .row--gutters-large {
     margin-right: -100px;
   }
@@ -423,6 +431,10 @@ a {
   }
 
 @media (min-width: 800px) {
+    .row--gutters-small {
+      margin-right: -45px;
+    }
+
     .row__medium-4 {
       float: left;
       width: 33.33%;
@@ -476,14 +488,32 @@ a {
 }
   }
 
+.page-section--no-b-padding-until-medium {
+    padding: 0;
+  }
+
+@media (min-width: 800px) {
+
+.page-section--no-b-padding-until-medium {
+      padding: 4.5rem
+  }
+  }
+
 .page-section--blue {
     background-color: #2f5572;
     color: #fff;
   }
 
 .page-section--testimonials {
-    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-    background-size: cover;
+    background-color: #e0e6ef;
+  }
+
+@media (min-width: 800px) {
+
+.page-section--testimonials {
+      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+      background-size: cover
+  }
   }
 
 .btn {
@@ -729,10 +759,19 @@ a {
 
 .testimonial {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0 1.81rem 1px 1.81rem;
+  margin-bottom: 98px;
+  padding: 0 18px 1px 18px;
 }
 
 /* 1px p-bottom lets inner p element utilize its m-bottom */
+
+@media (min-width: 800px) {
+
+.testimonial {
+    margin-bottom: 0;
+    padding: 0 1.81rem 1px 1.81rem
+}
+  }
 
 .testimonial__photo {
     border: 6px solid rgba(255, 255, 255, 0.8);
@@ -759,4 +798,8 @@ a {
     font-weight: 400;
     margin: 0.25rem 0 1rem 0;
     text-align: center;
+  }
+
+.testimonial--last {
+    margin-bottom: 0;
   }

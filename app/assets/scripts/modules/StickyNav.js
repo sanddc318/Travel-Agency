@@ -11,6 +11,11 @@ class StickyNav {
     this.pageSections = $('.page-section')
     this.navLinks = $('.primary-nav a')
     this.createPageSectionWaypoints()
+    this.addSmoothScrolling()
+  }
+
+  addSmoothScrolling() {
+    this.navLinks.smoothScroll()
   }
 
   createNavWaypoint() {

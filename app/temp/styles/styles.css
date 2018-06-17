@@ -1028,9 +1028,18 @@ a {
   opacity: 0;
   right: 0;
   top: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all 0.3s ease-out;
   visibility: hidden;
   z-index: 99;
 }
+.modal--is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    visibility: visible;
+  }
 .modal__inner {
     position: absolute;
     top: 50%;

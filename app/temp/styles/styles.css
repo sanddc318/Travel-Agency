@@ -806,6 +806,7 @@ a {
   }
 @media (min-width: 800px) {
 .site-header {
+    position: fixed;
     background-color: rgba(47,85,114, 0.3)
 }
   }
@@ -829,8 +830,14 @@ a {
 .site-header__logo {
       left: auto;
       -webkit-transform: translateX(0);
-              transform: translateX(0)
+              transform: translateX(0);
+      transition: all 0.3s ease-out
   }
+
+      .--dark .site-header__logo {
+        -webkit-transform: scale(0.55);
+                transform: scale(0.55);
+      }
   }
 .site-header__logo__graphic {
     text-indent: -9999px;
@@ -925,6 +932,11 @@ a {
               transform: scale(1);
       z-index: 1;
     }
+@media (min-width: 800px) {
+.--dark {
+    background-color: rgba(38,66,90, 0.9)
+}
+  }
 .primary-nav {
   padding-top: 10px;
 }

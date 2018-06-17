@@ -10,6 +10,7 @@
   }
 
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($mainBlue, 0.3);
   }
 
@@ -31,6 +32,11 @@
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
+      transition: all 0.3s ease-out;
+
+      .--dark & {
+        transform: scale(0.55);
+      }
     }
   }
 
@@ -122,5 +128,11 @@
       transform: scale(1);
       z-index: 1;
     }
+  }
+}
+
+.--dark {
+  @mixin atMedium {
+    background-color: rgba($darkBlue, 0.9);
   }
 }

@@ -4,6 +4,7 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 
 class StickyNav {
   constructor(els) {
+    this.lazyImages = $('.lazyload')
     this.itemsToDarken = els
     this.navTriggerElement = $('#our-beginning')
     this.createNavWaypoint()
@@ -12,10 +13,15 @@ class StickyNav {
     this.navLinks = $('.primary-nav a')
     this.createPageSectionWaypoints()
     this.addSmoothScrolling()
+    this.refreshWaypoints()
   }
 
   addSmoothScrolling() {
     this.navLinks.smoothScroll()
+  }
+
+  refreshWaypoints() {
+    this.lazyImages.on('load', () => Waypoint.refreshAll())
   }
 
   createNavWaypoint() {

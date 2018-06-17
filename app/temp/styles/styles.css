@@ -293,10 +293,10 @@ a {
    Instead, edit gulp/templates/sprites
 */
 .icon {
-    background-image: url('/assets/images/sprites/sprite-d675eadb.svg');
+    background-image: url('../../assets/images/sprites/sprite-d675eadb.svg');
   }
 .no-svg .icon {
-    background-image: url('/assets/images/sprites/sprite-d675eadb.png');
+    background-image: url('../../assets/images/sprites/sprite-d675eadb.png');
   }
 .icon--clear-view-escapes {
     width: 142.4px;
@@ -545,7 +545,7 @@ a {
   }
 @media (min-width: 1010px) {
       .page-section--testimonials.lazyloaded {
-        background: url('/assets/images/testimonials-bg.jpg') top center
+        background: url('../../assets/images/testimonials-bg.jpg') top center
           no-repeat;
         background-size: cover;
       }

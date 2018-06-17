@@ -1,0 +1,16 @@
+.modal {
+  background-color: rgba(255, 255, 255, 0.94);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+
+  &__description {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.65;
+    text-align: center;
+  }
+}

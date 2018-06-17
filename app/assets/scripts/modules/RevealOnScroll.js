@@ -17,10 +17,10 @@ class RevealOnScroll {
     this.itemsToReveal.each(index => {
       new Waypoint({
         element: this.itemsToReveal[index],
+        offset: this.offsetPerc,
         handler: () => {
           $(this.itemsToReveal[index]).addClass('reveal-item--is-visible')
-        },
-        offset: this.offsetPerc
+        }
       })
     })
   }

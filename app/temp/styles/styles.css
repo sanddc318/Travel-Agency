@@ -708,6 +708,7 @@ a {
   }
 .section-title--less-margin {
     margin-bottom: 1.3rem;
+    margin-top: 0;
   }
 .feature-item {
   padding-bottom: 2.5rem;
@@ -1024,16 +1025,40 @@ a {
   bottom: 0;
   left: 0;
   position: fixed;
+  opacity: 0;
   right: 0;
   top: 0;
+  visibility: hidden;
   z-index: 99;
 }
+.modal__inner {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+  }
 .modal__description {
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 1.65;
     text-align: center;
   }
+.modal__close {
+    color: #2f5572;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+  }
+.modal__close:hover {
+      color: #d59541;
+    }
 .social-icons {
   text-align: center;
 }
